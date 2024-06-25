@@ -1,5 +1,5 @@
 import { User } from "@/lib/types";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, UserCircle2 } from "lucide-react";
 
 const UserCard = ({ user }: { user: User }) => {
   // Choosing random color based on user
@@ -31,6 +31,9 @@ const UserCard = ({ user }: { user: User }) => {
         <div>
           <p className="text-sm sm:text-md lg:text-lg font-semibold text-gray-800">
             {user.name}
+          </p>
+          <p className="text-gray-600 flex gap-1 items-center text-sm sm:text-md lg:text-lg">
+            <UserCircle2 size={14} strokeWidth={2} /> {user.username}
           </p>
           <p className="text-gray-600 flex gap-1 items-center text-sm sm:text-md lg:text-lg">
             <Mail size={14} strokeWidth={2} /> {user.email}
