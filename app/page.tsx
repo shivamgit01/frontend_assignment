@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="min-h-screen p-8 lg:px-24">
+      <div className="min-h-screen p-8 lg:px-12">
         <div className="flex justify-between mb-8 items-center grid gap-4 grid-cols-1 sm:grid-cols-2">
           <h1 className="font-bold text-xl lg:text-3xl">Users</h1>
           <div className="flex gap-2 items-center border border-gray-300 rounded-full px-4 py-2 justify-self-end w-full lg:w-[60%] justify-between">
