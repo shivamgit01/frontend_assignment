@@ -56,8 +56,9 @@ export default function Home() {
           </div>
         </div>
 
-        {error && <SearchWarning warning="error" />}
-        {loading ? (
+        {error ? (
+          <SearchWarning warning="error" />
+        ) : loading ? (
           <SearchWarning warning="loading" />
         ) : users.length === 0 ? (
           <SearchWarning warning="not-found" />
